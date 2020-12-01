@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+ <style>
+   .flex {
+       display: flex;
+       height: 100%;
+       width: 100%;
+       flex-direction: column;
+       flex-wrap: nowrap;
+   }
+   .leftalign{
+       float: left;
+   }
+   .rightalign{
+       float: right;
+   }
+   .padding {
+       padding-top: 10px;
+       padding-left:20px;
+       padding-right:20px;
+   }
+   
+   ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+       
+    } 
+    li a {
+        display: inline;
+        float: left;
+        color: rgb(24, 24, 24);
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-family: arial, sans-serif;
+        font-size: 13px;
+    }  
+    .center {
+        margin: auto;
+    }
+    .googlelogo{
+        margin-top: 180px;
+        margin-bottom: 20px;
+    }
+    input {
+        height: 45px;
+        width: 500px;
+        border-radius: 50px;
+        border-style: solid;
+        border-width: 1pt;
+        border-color:  rgb(174, 174, 177);
+        border-radius: 50px;
+        margin-bottom: 15px;
+        background: url()
+    }
+    input:hover{
+        box-shadow: 0 0 5px rgb(189, 186, 186);
+    }
+    footer {
+        height: 20px;
+        position: absolute;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        background-color: rgb(236, 233, 233);
+        border-style: solid;
+        border-color: rgb(209, 208, 208); 
+        border-width: .4pt;
+        bottom: 0;
+        width: 100%;
+    }
+    .searchicon {
+        width: 15px;
+        height: 15px;
+        display: block;
+        border: none;
+        background: transparent;
+        background-repeat: no-repeat;
+        background-size: contain;
+        cursor: pointer;
+    }
+    #input_image{
+        position: absolute;
+        padding-top: 15px;
+        padding-left: 10px;
+    }
+    .input_container{
+        position:relative;
+    }
+}
+
+ </style>
+ <div class="flex">
+  <header>
+    <nav class="padding">
+        <ul class= "alignleft">
+            <li><a href="">About</a></li>
+
+            <li><a href="">Store</a></li>
+            <li style="float:right"><a href="">Gmail</a></li>
+            <li style="float:right"><a href="">Images</a></li>
+          </ul>
+     
+    
+    </nav>
+   </header>
+   <main class="center">
+    <img class="googlelogo" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="google logo" >
+    
+   </main>
+   <form class="center input_container">
+    <img class= "searchicon" id= "input_image"src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDU2Ljk2NiA1Ni45NjYiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDU2Ljk2NiA1Ni45NjY7IiB4bWw6c3BhY2U9InByZXNlcnZlIiB3aWR0aD0iMTZweCIgaGVpZ2h0PSIxNnB4Ij4KPHBhdGggZD0iTTU1LjE0Niw1MS44ODdMNDEuNTg4LDM3Ljc4NmMzLjQ4Ni00LjE0NCw1LjM5Ni05LjM1OCw1LjM5Ni0xNC43ODZjMC0xMi42ODItMTAuMzE4LTIzLTIzLTIzcy0yMywxMC4zMTgtMjMsMjMgIHMxMC4zMTgsMjMsMjMsMjNjNC43NjEsMCw5LjI5OC0xLjQzNiwxMy4xNzctNC4xNjJsMTMuNjYxLDE0LjIwOGMwLjU3MSwwLjU5MywxLjMzOSwwLjkyLDIuMTYyLDAuOTIgIGMwLjc3OSwwLDEuNTE4LTAuMjk3LDIuMDc5LTAuODM3QzU2LjI1NSw1NC45ODIsNTYuMjkzLDUzLjA4LDU1LjE0Niw1MS44ODd6IE0yMy45ODQsNmM5LjM3NCwwLDE3LDcuNjI2LDE3LDE3cy03LjYyNiwxNy0xNywxNyAgcy0xNy03LjYyNi0xNy0xN1MxNC42MSw2LDIzLjk4NCw2eiIgZmlsbD0iIzAwMDAwMCIvPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8L3N2Zz4K" />
+    <input type="search" id="query" name="q" placeholder="">  
+    
+   </form>
+   <form class="center">
+    <button>
+        Google Search
+    </button>
+    <button>
+        I'm Feeling Lucky
+    </button>
+   </form>
+   <footer>
+    <ul class= "alignleft">
+        <li><a href="">Advertising</a></li>
+
+        <li><a href="">Business</a></li>
+        <li><a href="">How Search Works</a></li>
+        <li style="float:right"><a href="">Privacy</a></li>
+        <li style="float:right"><a href="">Terms</a></li>
+        <li style="float:right"><a href="">Settings</a></li>
+      </ul>
+ 
+   </footer>
+</div>
+
+</html>
